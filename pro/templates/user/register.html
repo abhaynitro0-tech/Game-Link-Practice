@@ -1,11 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Join the Network</title>
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 0;
+    background: #000;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 60px 16px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 400px;
+    background: #17171c;
+    border: 1px solid #2a2a30;
+    border-radius: 16px;
+    padding: 32px 28px;
+  }
+
+  h1 {
+    color: #f2f2f2;
+    font-size: 28px;
+    margin: 0 0 8px;
+  }
+
+  .subtitle {
+    color: #9a9aa2;
+    font-size: 15px;
+    margin: 0 0 24px;
+  }
+
+  h2 {
+    color: #f2f2f2;
+    font-size: 19px;
+    margin: 0 0 16px;
+  }
+
+  input {
+    width: 100%;
+    background: #0d0d10;
+    border: 1px solid #33333a;
+    border-radius: 8px;
+    padding: 14px 16px;
+    color: #f2f2f2;
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  input::placeholder {
+    color: #6b6b73;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #8b5cf6;
+  }
+
+  label {
+    display: block;
+    color: #d0d0d5;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .section-gap {
+    margin-top: 8px;
+  }
+
+  button {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+    margin-top: 8px;
+    background: linear-gradient(90deg, #a21caf, #6366f1, #22d3ee);
+    cursor: pointer;
+  }
+
+  button:hover {
+    filter: brightness(1.1);
+  }
+
+  /* Tablet: slightly reduce outer spacing, allow a bit wider card */
+  @media (max-width: 768px) {
+    body {
+      padding: 40px 16px;
+    }
+    .card {
+      max-width: 480px;
+    }
+  }
+
+  /* Mobile: card fills width, less padding, smaller text */
+  @media (max-width: 480px) {
+    body {
+      padding: 24px 12px;
+    }
+    .card {
+      padding: 24px 18px;
+      border-radius: 12px;
+    }
+    h1 {
+      font-size: 24px;
+    }
+    h2 {
+      font-size: 17px;
+    }
+    input, button {
+      font-size: 14px;
+      padding: 12px 14px;
+    }
+  }
+
+  /* Small phones: tighten further */
+  @media (max-width: 360px) {
+    body {
+      padding: 16px 8px;
+    }
+    .card {
+      padding: 20px 14px;
+    }
+    h1 {
+      font-size: 21px;
+    }
+  }
+</style>
 </head>
 <body>
-    
+
+  <div class="card">
+    <h1>Join the Network</h1>
+    <p class="subtitle">Level up your gaming career today.</p>
+
+    <h2>Account Details</h2>
+    <input type="text" placeholder="Choose a Username">
+    <input type="password" placeholder="Create Password">
+    <input type="text" placeholder="Discord Handle (e.g. User#1234)">
+
+    <h2 class="section-gap">Link Your Game Accounts</h2>
+
+    <label>Valorant ID</label>
+    <input type="text" placeholder="Name#Tag">
+
+    <label>Clash of Clans ID</label>
+    <input type="text" placeholder="Player Tag (e.g. #ABC1234)">
+
+    <button>Create Profile</button>
+  </div>
+
 </body>
 </html>
